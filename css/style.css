@@ -369,6 +369,7 @@ p {
 
 .hero-buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
     margin-top: 2rem;
 }
@@ -1095,6 +1096,9 @@ footer {
     .massive-heading { font-size: 2.5rem; }
     h1 { font-size: 2.8rem; }
     h2 { font-size: 2.2rem; }
+    
+    .hero-buttons { flex-direction: column; width: 100%; }
+    .hero-buttons .btn { width: 100%; }
     
     .stats { grid-template-columns: 1fr; text-align: center; gap: 1rem; }
     
