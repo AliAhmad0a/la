@@ -1046,6 +1046,11 @@ footer {
         gap: 4rem;
     }
     
+    /* Center align-left headers on tablet/mobile */
+    .section-header.align-left {
+        text-align: center;
+    }
+    
     .timeline::before { left: 40px; }
     .timeline-item { justify-content: flex-end; padding-left: 80px; padding-right: 0; }
     .timeline-item:nth-child(even) { justify-content: flex-end; padding-left: 80px; }
@@ -1058,9 +1063,8 @@ footer {
     }
     
     .timeline-dot { left: 40px; }
-}
 
-@media (max-width: 900px) {
+    /* Hero and About section from 900px */
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1073,7 +1077,16 @@ footer {
     .hero-buttons { justify-content: center; }
     
     .about-grid { grid-template-columns: 1fr; gap: 2rem; }
-    .about-text { padding: 2rem; }
+    .about-text { padding: 2rem; text-align: center; }
+    
+    .process-step { flex-direction: column; text-align: center; align-items: center; }
+    .edu-card { text-align: center; }
+    
+    .skills-wrapper { justify-content: center; }
+    .skill-category { text-align: center; }
+    
+    .service-card { text-align: center; }
+    .service-card .icon-wrapper { margin: 0 auto 1.5rem; }
 }
 
 @media (max-width: 768px) {
@@ -1090,6 +1103,8 @@ footer {
     .contact-buttons .btn { width: 100%; }
     
     .footer-container { flex-direction: column; text-align: center; }
+    
+    .stats { grid-template-columns: 1fr; text-align: center; gap: 1rem; }
 }
 
 @media (max-width: 480px) {
@@ -1099,8 +1114,6 @@ footer {
     
     .hero-buttons { flex-direction: column; width: 100%; }
     .hero-buttons .btn { width: 100%; }
-    
-    .stats { grid-template-columns: 1fr; text-align: center; gap: 1rem; }
     
     .profile-badge { display: none; } /* Hide floating badges on very small screens to avoid overflow */
     
